@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 * linguist-vendored
 *.js linguist-vendored=false
+=======
+$ cat .gitattributes
+special-vendored-path/* linguist-vendored
+react.js linguist-vendored=false
+>>>>>>> c07a1174d88ebf7203985615451cfdf3bf96adf0
