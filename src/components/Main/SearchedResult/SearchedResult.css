@@ -1,0 +1,39 @@
+.SearchedResult {
+    background-color: rgb(220, 226, 233);
+    min-width: 100%;
+    min-height: 100vh;
+    margin-top: 0.3rem;
+    padding: 3rem 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+}
+
+/* max 400px */
+@media (max-width: 25em) {
+    .SearchedResult {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 401px to 600px*/
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .SearchedResult {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .SearchedResult {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 901px to 1200px land screen*/
+@media (min-width: 56.313em) and (max-width: 75em) {
+    .SearchedResult {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

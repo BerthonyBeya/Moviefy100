@@ -1,0 +1,168 @@
+.MovieInfos {
+    background-color: rgb(220, 226, 233);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0.3rem;
+    padding: 3rem 5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0.1rem;
+}
+
+.MovieInfos__Img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.Box-1 {
+    min-height: 34rem;
+}
+
+.Box-2 {
+    padding-left: 1rem;
+}
+
+.Box-3 {
+    grid-column: 1/3;
+    padding-top: 1rem;
+}
+
+.infos {
+    display: flex;
+    align-items: flex-start;
+}
+
+.infos > h1 {
+    color: rgb(18, 73, 129);
+    padding-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.infos > p {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-top: 1.4rem;
+}
+
+.MovieInfos__video {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(51, 130, 209);
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+}
+
+.MovieInfos__video:hover {
+    color: #fff;
+    background-color: rgb(21, 68, 116);
+}
+
+/* max 400px */
+@media (max-width: 25rem) {
+    .MovieInfos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .MovieInfos__Img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .infos > h1 {
+        color: rgb(18, 73, 129);
+        font-size: 2rem;
+    }
+
+    .infos > p {
+        font-size: 1.7rem;
+    }
+
+    .Box-3 {
+        grid-column: 1;
+        padding-top: 1rem;
+    }
+}
+
+/* 401px to 600px*/
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .MovieInfos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .MovieInfos__Img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .infos > h1 {
+        color: rgb(18, 73, 129);
+        font-size: 2rem;
+    }
+
+    .infos > p {
+        font-size: 1.7rem;
+    }
+
+    .Box-3 {
+        grid-column: 1;
+        padding-top: 1rem;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .MovieInfos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .MovieInfos__Img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .infos > h1 {
+        color: rgb(18, 73, 129);
+        font-size: 2rem;
+    }
+
+    .infos > p {
+        font-size: 1.7rem;
+    }
+
+    .Box-3 {
+        grid-column: 1;
+        padding-top: 1rem;
+    }
+}
+
+/* 901px to 1200px land screen*/
+@media (min-width: 56.313em) and (max-width: 75em) {
+    .MovieInfos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .MovieInfos__Img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .infos > h1 {
+        color: rgb(18, 73, 129);
+        font-size: 2rem;
+    }
+
+    .infos > p {
+        font-size: 1.7rem;
+    }
+
+    .Box-3 {
+        grid-column: 1;
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,109 @@
+.link {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.Header__nav .link > a {
+    text-decoration-line: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgb(83, 80, 80);
+}
+
+.Header__nav .link > a:hover {
+    color: rgb(30, 144, 255);
+}
+
+/* nav */
+.Header__nav {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+/* max 400px */
+@media (max-width: 25em) {
+    .Header__nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20rem;
+        position: absolute;
+        height: 60rem;
+        width: 100%;
+        background-color: rgb(25, 45, 65);
+        transform: translateY(-500px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .Header__nav .link > a {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    .link {
+        margin-top: 5rem;
+    }
+
+    .Header__nav.menu {
+        display: flex;
+        transform: translateY(0);
+    }
+}
+
+/* 400px to 600px */
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .Header__nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20rem;
+        position: absolute;
+        height: 60rem;
+        width: 100%;
+        background-color: rgb(25, 45, 65);
+        transform: translateY(-500px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .Header__nav .link > a {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    .link {
+        margin-top: 5rem;
+    }
+
+    .Header__nav.menu {
+        display: flex;
+        transform: translateY(0);
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .Header__nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20rem;
+        position: absolute;
+        height: 60rem;
+        width: 100%;
+        background-color: rgb(25, 45, 65);
+        transform: translateY(-500px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .Header__nav .link > a {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    .link {
+        margin-top: 5rem;
+    }
+
+    .Header__nav.menu {
+        display: flex;
+        transform: translateY(0);
+    }
+}

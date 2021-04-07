@@ -1,0 +1,66 @@
+.Hamburger {
+    border: 1px solid rgb(30, 144, 255);
+    background-color: rgb(30, 144, 255);
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 2rem;
+    top: 5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.Hamburger > div {
+    background-color: #fff;
+    width: 2rem;
+    height: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+/* max 400px */
+@media (max-width: 25em) {
+    .Hamburger {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .Hamburger > div {
+        width: 4rem;
+        height: 0.5rem;
+    }
+}
+
+/* 400px to 600px */
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .Hamburger {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .Hamburger > div {
+        width: 4rem;
+        height: 0.5rem;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .Hamburger {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .Hamburger > div {
+        width: 4rem;
+        height: 0.5rem;
+    }
+}

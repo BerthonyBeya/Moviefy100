@@ -1,0 +1,59 @@
+.DisplayMovie {
+    min-height: 15rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.DisplayMovie__img {
+    height: 15rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* max 400px */
+@media (max-width: 25rem) {
+    .DisplayMovie {
+        width: 100%;
+        margin-left: -1.5rem;
+    }
+
+    .DisplayMovie__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* 401px to 600px*/
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .DisplayMovie {
+        width: 100%;
+        margin-left: -1.5rem;
+    }
+
+    .DisplayMovie__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .DisplayMovie {
+        width: 100%;
+        margin-left: -1.5rem;
+    }
+
+    .DisplayMovie__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+

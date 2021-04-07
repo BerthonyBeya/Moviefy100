@@ -1,0 +1,123 @@
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    padding: 0.5rem 2rem;
+    box-shadow: 0.5px 0.5px 10px rgb(128, 128, 128);
+}
+
+/* logo */
+.Header__logo {
+    height: 3rem;
+    margin-top: -0.5rem;
+}
+
+.Header__p {
+    font-size: 0.8rem;
+    margin-top: -0.5rem;
+    margin-left: 0.8rem;
+    color: rgb(136, 133, 133);
+}
+
+.Form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form-header {
+    position: relative;
+}
+
+.Form-header__input {
+    height: 2rem;
+    width: 16rem;
+    padding-left: 0.8rem;
+    font-size: 0.9rem;
+    border: 1px solid rgb(211, 209, 209);
+    padding-right: 2.5rem;
+}
+
+.Form-header__input:focus {
+    color: rgb(128, 128, 128);
+    outline: 0.5px solid rgb(29, 141, 253);
+    border: transparent;
+}
+
+.Form-header__button {
+    background: transparent;
+    border: 1px solid rgb(211, 209, 209);
+    height: 2rem;
+    font-size: 1rem;
+    color: rgb(29, 141, 253);
+    padding-top: 0.2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    position: absolute;
+    right: 2rem;
+}
+
+/* max 400px */
+@media (max-width: 25em) {
+    .Form-header {
+        display: none;
+    }
+
+    .Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header__logo {
+        height: 3rem;
+        margin-top: -0.5rem;
+    }
+}
+
+/* 400px to 600px */
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .Form-header {
+        display: none;
+    }
+
+    .Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header__logo {
+        height: 3.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .Header__p {
+        font-size: 0.9rem;
+        margin-left: 0.9rem;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .Form-header {
+        display: none;
+    }
+
+    .Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header__logo {
+        height: 3.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .Header__p {
+        font-size: 0.9rem;
+        margin-left: 0.9rem;
+    }
+}

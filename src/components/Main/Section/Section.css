@@ -1,0 +1,28 @@
+.Section {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 0.3rem;
+    background: rgb(220, 226, 233);
+    padding-bottom: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section__logo {
+    height: 6rem;
+}
+
+@media (max-width: 25em) {
+    .Section__logo {
+        margin-top: -8rem;
+    }
+}
+
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .Section__logo {
+        margin-top: -8rem;
+    }
+}

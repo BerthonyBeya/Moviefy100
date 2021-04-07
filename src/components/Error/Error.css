@@ -1,0 +1,25 @@
+.Error {
+    background: rgb(220, 226, 233);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0.3rem;
+    padding: 2rem 3rem;
+}
+
+.Error__large-Txt {
+    font-size: 2.5rem;
+    color: rgb(70, 68, 68);
+}
+
+.Error__small-Txt {
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
+    color: rgb(70, 68, 68);
+}
+
+.Error__Home-link {
+    color: rgb(35, 109, 184);
+    font-size: 0.9rem;
+    text-decoration-line: none;
+}
+

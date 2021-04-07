@@ -1,0 +1,68 @@
+.Form-section {
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.Form-section__input {
+    width: 40rem;
+    height: 3.5rem;
+    padding: 0rem 1.5rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid rgb(192, 190, 190);
+}
+
+.Form-section__input:focus {
+    outline: 1px solid rgb(126, 219, 126);
+}
+
+.Form-section__button {
+    width: 5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #2d94d9;
+    font-size: 1.5rem;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* max 400px */
+@media (max-width: 25em) {
+    .Form-section__input {
+        width: 35rem;
+        height: 5rem;
+    }
+
+    .Form-section__input {
+        font-size: 1.8rem;
+    }
+}
+
+/* 400px to 600px */
+@media (min-width: 25.063em) and (max-width: 37.5em) {
+    .Form-section__input {
+        width: 35rem;
+        height: 5rem;
+    }
+
+    .Form-section__input {
+        font-size: 1.8rem;
+    }
+}
+
+/* 601px to 900px */
+@media (min-width: 37.563em) and (max-width: 56.25em) {
+    .Form-section__input {
+        width: 35rem;
+        height: 5rem;
+    }
+
+    .Form-section__input {
+        font-size: 1.8rem;
+    }
+}
