@@ -12,7 +12,7 @@ const Section = () => {
             </Helmet>
 
             <section className="Section">
-                <img className="Section__logo" src="images/moviefy100.svg" alt="logo" />
+                <img className="Section__logo" src="Images/moviefy100.svg" alt="img" />
                 <Form
                     Form={"Form-section"}
                     FormInput={"Form-section__input"}
