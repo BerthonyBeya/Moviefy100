@@ -19,7 +19,7 @@ const App = () => {
   const [movieByID, setMovieByID] = useState(null);
   const [spinner, setSpinner] = useState(false);
   const [menu, setMenu] = useState(null);
-
+  
   return (
     <Router>
       <div className="App">
@@ -28,7 +28,7 @@ const App = () => {
           movies, setMovies,
           movieByID, setMovieByID,
           spinner, setSpinner,
-          menu, setMenu
+          menu, setMenu,
         }}>
           <Header />
           <Spinner />

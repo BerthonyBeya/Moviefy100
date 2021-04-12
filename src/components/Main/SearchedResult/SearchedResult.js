@@ -7,12 +7,24 @@ import { Helmet } from 'react-helmet';
 
 
 const SearchedResult = props => {
-    const { movies, setMovies } = useContext(appContext);
+    const { movies, setMovies, spinner, setSpinner
+    } = useContext(appContext);
+
     const movie = props.movie;
     const series = props.series;
 
     let moviesOrSeries = movie ? movie : series;
-    
+
+    // Hide Component when spinner is true
+    let removeResults = {};
+    if (spinner) {
+        removeResults = {
+            opacity: '0',
+            height: '100vh',
+            overflow: 'hidden'
+        }
+    }
+
     const display = () => {
         if (movies !== null) {
             const allMovies = movies.map(movie => {
@@ -21,15 +33,22 @@ const SearchedResult = props => {
             return allMovies;
 
         } else {
-
             const fetching = async () => {
                 let allResult = '';
-
                 try {
                     // Fetching data
                     const firstResult = await axios(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_MY_KEY}&type=${moviesOrSeries}&s=avengers`);
+                    setSpinner(() => {
+                        return true;
+                    });
                     const secondResult = await axios(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_MY_KEY}&type=${moviesOrSeries}&s=friends`);
+                    setSpinner(() => {
+                        return true;
+                    });
                     const thirdResult = await axios(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_MY_KEY}&type=${moviesOrSeries}&s=superman`);
+                    setSpinner(() => {
+                        return true;
+                    });
 
                     if (firstResult.data.Search && firstResult.data.Search && thirdResult.data.Search) {
                         // Adding all the fetched data together
@@ -74,7 +93,7 @@ const SearchedResult = props => {
                  This is the result of whatever it is you're looking for. enjoy!
                 " />
             </Helmet>
-            <section className='SearchedResult'>
+            <section style={removeResults} className='SearchedResult'>
                 {display()}
             </section>
         </>
